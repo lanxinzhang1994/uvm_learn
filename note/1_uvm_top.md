@@ -6,7 +6,7 @@
 
 **图1 - 典型uvm验证平台**
 
-![](E:\ICRD\Verifier\UVM\uvm_learn\note\pic\tb1.PNG)
+![](.\pic\tb1.PNG)
 
 我们的验证环境顶层中包括test，dut，interface，clk_gen，rst_gen等几个部分，dut(desgin under test)就是我们的待测设计，而test是我们的验证组件，两者需要通过interface连接起来。同时dut和test的工作当然还少不了时钟和复位，因此还需要clk_gen和rst_gen提供时钟和复位信号。
 
@@ -15,12 +15,12 @@
 如果设计比较复杂，比如dut有两个部分，一个部分进行数据运算，该部分对外留有一个数据交换的axi接口；同时还有一个特殊功能寄存器部分，用于控制dut行为与参数，该部分对外留有一个apb接口。那么验证平台可能就会略微复杂一点，如下图：   
 
 **图2 - 略微复杂的uvm验证平台**    
-![](E:\ICRD\Verifier\UVM\uvm_learn\note\pic\tb2.PNG)    
+![](.\pic\tb2.PNG)    
 
 ## 1.2 test的结构        
 
 一个test称为一个测试，一个典型的env内部结构如下图：  
-![](E:\ICRD\Verifier\UVM\uvm_learn\note\pic\env0.PNG)   
+![](.\pic\env0.PNG)   
 
 
 
